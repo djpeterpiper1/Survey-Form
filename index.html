@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>RobinYou Survey</title>
+</head>
+<body>
+    <header>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <h1 id="title">RobinYou Survey Form</h1>
+    <p id="description">Thank You for taking part in our survey</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="fieldgroup">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" placeholder="Enter your Name" id="name" name="name" required> 
+        <label for="email" id="email-label">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" name="email" required>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" placeholder="Age" id="number" name="number" min="1" max="100">
+        </div>
+
+        <div class="listgroup">     
+        <label for="dropdown">Which best describes your investment skill level</label>
+        <select id="dropdown">
+            <option value="">Select Level....</option>
+            <option value="noexp">No Experience</option>
+            <option value="begin">Beginner</option>
+            <option value="interm">Intermediate</option>
+            <option value="advan">Advanced</option>
+        </select>
+        </div>
+
+        <div class="radiogroup">
+        <label for="group">Would you recommend RobinYou to a friend?</label><br>
+        <input type="radio"  name="group" id="choice1" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio"  name="group" id="choice2" value="no">
+        <label for="no">No</label><br>
+        <input type="radio"  name="group" id="choice3" value="maybe">
+        <label for="maybe">Maybe</label>
+        </div>
+
+        <div class="checkgroup">
+        <label for="improve">What would you like to see improved?</label><br>
+        <input type="checkbox" name="improve" value="charts">Charts<br>
+        <input type="checkbox" name="improve" value="chatrooms">Chatrooms<br>
+        <input type="checkbox" name="improve" value="customer">Customer Support<br>
+        <input type="checkbox" name="improve" value="education">Educational Resources
+        </div>
+
+        <textarea cols="59" rows="8"></textarea>
+        <input type="submit" value="Submit" id="submit" class="subbtn"> 
+    </form>
+</body>
+</html>

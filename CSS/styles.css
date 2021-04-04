@@ -1,0 +1,100 @@
+body{
+    margin:o;
+    padding:0;
+   background-color: rgba(33, 206, 153,100%);
+   font-family: 'Roboto Mono', monospace;
+   font-size: 18px;
+   color:whitesmoke;
+}
+
+
+h1{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 50px;
+}
+label{
+    margin: 10px 0px;
+}
+
+label.radiogroup {
+    margin-bottom: 100px;
+}
+
+form{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    max-height: 1200px;
+    width: 50%;
+    background-color: #5ab9ea;
+    border-radius: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+ 
+}
+header{
+    text-align: center;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fieldgroup{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin-bottom: 40px;
+}
+
+.listgroup{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin-bottom: 40px;
+    
+}
+
+.radiogroup{
+    display: block;
+    width:40%;
+    margin-bottom: 40px;
+    
+}
+
+.radiogroup label{
+    margin-bottom: 40px;  
+}
+.checkgroup{
+    max-width:40%;
+    margin-bottom: 40px;
+    
+}
+
+
+.checkgroup label{
+margin-bottom: 90px; 
+}
+textarea{
+    margin-bottom: 20px;
+}
+
+.subbtn{
+    width:40%;
+      
+}
+
+@media screen and (min-width:300px) and (max-width:1094px){
+
+    form{
+        background-color: #5ab9ea;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    textarea{
+        width:80%;
+    }
+}
